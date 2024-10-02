@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		// инициализация переменных
+        let person = new Object();
+        person.surname = 'Кaрамзин';
+		person.name = 'Виктор';
+		person.patronymic = 'Геннадьевич'; 
+		person.occupation = 'Преподаватель специальных дисциплин.';
+		person.degree = 'Высшее.';
+        person.category = 'Первая.';
+        person.education = new Array();
+        person.education[0] = 'Московский государственный институс электронной техники(технический университет).';
+        person.education[1] = 'Санкт-Петербургский государственный университет (СПбГУ)';
+        person.discipline = new Array();
+        person.discipline[0] = 'Информатика.';
+        person.discipline[1] = 'Основы программирования.';
+        person.discipline[2] = 'Инженерная графика.';
+        person.note = '';
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Преподаватели</h1>
+	</header>	
+	
+	<div class="content">
+		<script>
+			// выведем значения переменных
+            document.write(`<h2>${person.surname} ${person.name} ${person.patronymic}</h2>`);
+			document.write(`Должность: ${person.occupation}<br>`);
+			document.write(`Уровень образования: ${person.degree}<br>`);
+			document.write(`Категория: ${person.category}<br>`);
+            document.write(`Образование: ${person.education[0]}, ${person.education[1]}<br>`);
+            document.write(`Дисциплина: <ul><li>${person.discipline[0]}</li><li>${person.discipline[1]}</li><li>${person.discipline[2]}</li></ul><br>`);
+            document.write(`Примечание: ${person.note}`);
+		</script>
+	</div>
+
+</body>
+</html>

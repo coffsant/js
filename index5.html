@@ -5,16 +5,16 @@
 	<title>Курс JavaScript</title>
 	<script>
 		// инициализация переменных
-        let person = new Array();
-        person[0] = 'Кaрамзин';
-		person[1] = 'Виктор';
-		person[2] = 'Геннадьевич'; 
-		person[3] = 'Преподаватель специальных дисциплин.';
-		person[4] = 'Высшее.';
-        person[5] = 'Категория: Первая.';
-        person[6] = 'Московский государственный институс электронной техники(технический университет).';
-        person[7] = 'Информатика.';
-        person[8] = '';
+        let person = new Object();
+        person.surname = 'Кaрамзин';
+		person.name = 'Виктор';
+		person.patronymic = 'Геннадьевич'; 
+		person.occupation = 'Преподаватель специальных дисциплин.';
+		person.degree = 'Высшее.';
+        person.category = 'Категория: Первая.';
+        person.education = 'Московский государственный институс электронной техники(технический университет).';
+        person.discipline = 'Информатика.';
+        person.note = '';
 	</script>
 </head>
 
@@ -27,13 +27,13 @@
 	<div class="content">
 		<script>
 			// выведем значения переменных
-            document.write(`<h2>${person[0]} ${person[1]} ${person[2]}</h2>`);
-			document.write(`Должность: ${person[3]}<br>`);
-			document.write(`Уровень образования: ${person[4]}<br>`);
-			document.write(`Категория: ${person[5]}<br>`);
-            document.write(`Образование: ${person[6]}<br>`);
-            document.write(`Дисциплина: ${person[7]}<br>`);
-            document.write(`Примечание: ${person[8]}`);
+            document.write(`<h2>${person.surname} ${person.name} ${person.patronymic}</h2>`);
+			document.write(`Должность: ${person.occupation}<br>`);
+			document.write(`Уровень образования: ${person.degree}<br>`);
+			document.write(`Категория: ${person.category}<br>`);
+            document.write(`Образование: ${person.education}<br>`);
+            document.write(`Дисциплина: ${person.discipline}<br>`);
+            document.write(`Примечание: ${person.note}`);
 		</script>
 	</div>
 
